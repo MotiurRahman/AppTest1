@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="acs-service-baseurl-personService">http://localhost:56780</property>
+    <id>com.bd.gsltest</id>
+    <name>AppTest1</name>
+    <version>1.0</version>
+    <publisher>gsl001</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <copyright>2014 by gsl001</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>ecaa03bd-d659-4693-a4f3-940e7e31353b</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest android:installLocation="auto">
+            <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19"/>
+            <application>
+                <activity
+                    android:configChanges="keyboardHidden|orientation"
+                    android:label="AppTest1"
+                    android:name=".Apptest1Activity" android:theme="@style/Theme.Titanium">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN"/>
+                        <category android:name="android.intent.category.LAUNCHER"/>
+                    </intent-filter>
+                    <intent-filter>
+                        <data android:scheme="touchtest-afd7ad01-5043-4ec1-9a2e-34ba568f4b92"/>
+                        <action android:name="android.intent.action.VIEW"/>
+                        <category android:name="android.intent.category.BROWSABLE"/>
+                        <category android:name="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+                </activity>
+                <service android:enabled="true" android:exported="false" android:name="com.soasta.android.touchtest.TouchTestService"/>
+            </application>
+            <application android:theme="@style/Theme.CustomActionBar"/>
+            <!-- <application android:theme="@style/Theme.NoActionBar"/> -->
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+            <uses-permission android:name="android.permission.BLUETOOTH"/>
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+            <uses-permission android:name="android.permission.GET_TASKS"/>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="iphone">ti.map</module>
+        <module platform="android">ti.map</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+        <target device="ipad">true</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">true</target>
+        <target device="tizen">false</target>
+    </deployment-targets>
+    <sdk-version>3.4.1.GA</sdk-version>
+    <ios>
+        <min-ios-ver>7.1.2</min-ios-ver>
+    </ios>
+    <property name="com-soasta-touchtest-version" type="string">7040.132</property>
+    <ios>
+        <plist>
+            <key>CFBundleDisplayName</key>
+            <string>New Eng Inn</string>
+            <key>UISupportedInterfaceOrientations</key>
+            <array>
+                <string>UIInterfaceOrientationPortrait</string>
+                <string>UIInterfaceOrientationPortraitUpsideDown</string>
+            </array>
+        </plist>
+    </ios>
+    <plugins>
+        <plugin>com.soasta.touchtest.android</plugin>
+    </plugins>
+    <property name="com-soasta-touchtest-ios-appId" type="string">273351</property>
+</ti:app>

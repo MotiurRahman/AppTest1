@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+iosLaunchConfigurationAttributes/ATTR_MINIFY=false
+iosLaunchConfigurationAttributes/ATTR_PROJECT_NAME=AppTest1
+iosLaunchConfigurationAttributes/ATTR_UPLOAD_DEBUG_SYMBOLS=false
+iosLaunchConfigurationAttributes/appid=com.bd.gsltest
+iosLaunchConfigurationAttributes/certificate=UTC Associates, Inc. (M8UFGDVL6C)
+iosLaunchConfigurationAttributes/distribute_path=/Users/gsl001/Desktop/DeskTop
+iosLaunchConfigurationAttributes/keychain=
+iosLaunchConfigurationAttributes/output_format=ipa
+iosLaunchConfigurationAttributes/sdk_version=8.1
+iosLaunchConfigurationAttributes/uuid=405dbe5d-cd72-4a9b-ab05-2a68db3deeed
