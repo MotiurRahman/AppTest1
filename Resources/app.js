@@ -50,7 +50,7 @@
 // win.open();
 
 var win = Ti.UI.createWindow({
-	backgroundColor : 'white'
+	backgroundColor : 'Red'
 });
 var track = Ti.UI.createView({
 	width : 100,
